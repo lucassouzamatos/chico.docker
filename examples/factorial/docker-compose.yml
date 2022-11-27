@@ -1,0 +1,8 @@
+version: "2.1"
+
+services:
+  factorial:
+    image: iluc/chico.lang:1.0.0
+    volumes:
+      - ./src:/src
+    command: chico --compile /src/factorial.chico
